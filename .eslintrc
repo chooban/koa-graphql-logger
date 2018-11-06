@@ -1,0 +1,62 @@
+{
+  "env": {
+    "es6": true,
+    "node": true,
+    "mocha": true
+  },
+  "extends": ["eslint:recommended", "plugin:import/errors", "plugin:import/warnings"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {"classes": true, "experimentalObjectRestSpread": true, "jsx": true, "modules": true},
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
+  "root": true,
+  "rules": {
+    "array-bracket-spacing": 0,
+    "brace-style": 2,
+    "comma-dangle": ["warn", "never"],
+    "comma-spacing": ["warn", {"after": true, "before": false}],
+    "complexity": [2, 5],
+    "curly": 2,
+    "import/named": 2,
+    "import/no-unresolved": 0,
+    "indent": ["warn", 2, {"SwitchCase": 1}],
+    "key-spacing": ["warn", {"afterColon": true, "align": "value", "beforeColon": false, "mode": "minimum"}],
+    "keyword-spacing": [2, {"after": true, "before": true}],
+    "max-depth": [1, 2],
+    "max-len": [
+      "warn",
+      {
+        "code": 100,
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true,
+        "ignoreTrailingComments": true,
+        "ignoreUrls": true,
+        "tabWidth": 2
+      }
+    ],
+    "no-alert": 0,
+    "no-console": 0,
+    "no-multiple-empty-lines": [1, {"max": 3}],
+    "no-param-reassign": 2,
+    "no-sparse-arrays": 2,
+    "no-trailing-spaces": 2,
+    "no-unreachable": 2,
+    "no-unused-vars": ["error", {"ignoreRestSiblings": true}],
+    "object-curly-spacing": 0,
+    "padded-blocks": ["warn", {"classes": "always", "switches": "always"}],
+    "prefer-const": ["error", {"destructuring": "any"}],
+    "quote-props": [1, "as-needed"],
+    "quotes": [2, "single", "avoid-escape"],
+    "semi": [1, "never"],
+    "semi-spacing": [1, {"after": true, "before": false}],
+    "space-before-blocks": [1, "always"],
+    "space-before-function-paren": [1, {"anonymous": "always", "named": "never"}],
+    "space-in-parens": [1, "never"],
+    "space-infix-ops": 1,
+    "space-unary-ops": [1, {"nonwords": false, "words": true}],
+    "spaced-comment": [1, "always"],
+    "strict": 1
+  }
+}
